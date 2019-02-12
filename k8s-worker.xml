@@ -3,5 +3,7 @@
   <short>Kubernetes Worker</short>
   <description>Ports required for a Kubernetes Worker node per https://kubernetes.io/docs/setup/independent/install-kubeadm/.</description>
   <port port="10250" protocol="tcp"/>
+  <port port="6781-6783" protocol="tcp"/>
+  <port port="6783-6784" protocol="udp"/>
   <port port="30000-32767" protocol="tcp"/>
 </service>
