@@ -5,4 +5,6 @@
   <port port="6443" protocol="tcp"/>
   <port port="2379-2380" protocol="tcp"/>
   <port port="10250-10253" protocol="tcp"/>
+  <port port="6781-6783" protocol="tcp"/>
+  <port port="6783-6784" protocol="udp"/>
 </service>
