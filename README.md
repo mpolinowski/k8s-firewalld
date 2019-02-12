@@ -22,6 +22,15 @@ Worker nodes
 |  TCP |  Inbound | 30000-32767  | NodePort Services | All |
 
 
+All nodes (only needed if you are using [Weave Net](https://www.weave.works/docs/net/latest/faq/#ports) as [CNI](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#pod-network)
+
+| Protocol  | Direction  | Port Range  | Purpose  | Used By  |
+|---|---|---|---|---|
+|  TCP |  Inbound | 6783  | Control and Data Ports | WeaveNet  |
+|  UDP |  Inbound | 6783-6784  | Control and Data Ports | WeaveNet |
+|  TCP |  Inbound | 6781-6782  | Pod metrics | WeaveNet |
+
+
 To test on a Kubernetes Master:
 <ul>
   <li>Copy the k8s-master.xml file to the /etc/firewalld/services directory</li>
